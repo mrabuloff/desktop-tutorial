@@ -1,11 +1,12 @@
-Number_of_completed_task = float(12)
-Text1 = "Всего задач:"
-Text2 = "затрачено часов:"
-Number_of_hours_spent = float(1.5)
-Course_name='Python'
-name = "Курс: " + Course_name
-b=float(Number_of_hours_spent/Number_of_completed_task)
-print(str(b))
-Text3 = "среднее время выполнения "
-Text4=" часа."
-print(name, Text1, Number_of_completed_task,',', Text2,'', Number_of_hours_spent, Text3, str(b), Text4)
+# Количество выполненных ДЗ (запишите значение 12)
+Number_of_completed_task = 12
+# Количество затраченных часов (запишите значение 1,5)
+hours_spent = 1.5
+# Название курса (запишите значение 'Python')
+course_name = 'Python'
+# Время на одно задание (вычислить используя 1 и 2 переменные)
+time_for_one_task = hours_spent / Number_of_completed_task
+# Выведите на экран(в консоль), используя переменные, следующую строку:
+# Курс: Python, всего задач:12, затрачено часов: 1.5, среднее время выполнения 0,125 часа.
+print('Курс:', course_name + ',', 'всего задач:', str(Number_of_completed_task) + ',',
+      'затрачено часов:', str(hours_spent) + ',', 'среднее время выполнение', str(time_for_one_task), 'часа' + '.')
