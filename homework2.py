@@ -1,9 +1,11 @@
-Number_of_completed_task=12
-Number_of_hours_spent=1.5
+Number_of_completed_task = float(12)
+Text1 = "Всего задач:"
+Text2 = "затрачено часов:"
+Number_of_hours_spent = float(1.5)
 Course_name='Python'
-#Time_for_1_task=(Number_of_hours_spent\Number_of_completed_task)
-#print('Курс:', Course_namae, 'всего', 'задач:', Number_of_completed_task, ', затрачено', 'часов:', Number_of_hours_spent, ', среднее', 'время', 'выполнения', Time_for_1_task, 'часа.')
-
-print(type(Number_of_completed_task))
-print(type(Number_of_hours_spent))
-print(type(Course_name))
+name = "Курс: " + Course_name
+b=float(Number_of_hours_spent/Number_of_completed_task)
+print(str(b))
+Text3 = "среднее время выполнения "
+Text4=" часа."
+print(name, Text1, Number_of_completed_task,',', Text2,'', Number_of_hours_spent, Text3, str(b), Text4)
