@@ -12,10 +12,6 @@
 grades = [(5 + 3 + 3 + 5 + 4)/5], [(2 + 2 + 2 + 3)/4], [(4 + 5 + 5 + 2)/4], [(4 + 4 + 3)/3], [(5 + 5 + 5 + 4 + 5)/ 5]
 students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
 # 1 вариант
-cr_znach = {'Johnny': grades[0], 'Bilbo': grades[1], 'Steve': grades[2], 'Khendrik':grades[3], 'Aaron':grades[4]}
-print(cr_znach)
-
-# 2 вариант
 
 grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
 students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
@@ -24,7 +20,7 @@ grades_m = sum(grades[0])/len(grades[0]), sum(grades[1])/len(grades[1]), sum(gra
 dict1 = {students[0]: grades_m[0], students[1]: grades_m[1], students[2]:grades_m[2], students[3]: grades_m[3], students[4]: grades_m[4]}
 print(dict1)
 
-# 3 вариант
+# 2 вариант
 
 grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
 students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
