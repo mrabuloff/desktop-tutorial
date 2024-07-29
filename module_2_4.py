@@ -12,11 +12,11 @@
 Выведите списки primes и not_primes на экран(в консоль)."""
 
 
-"""numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 primes = []
 not_primes = []
 
-for i in numbers:
+"""for i in numbers:
     is_prime = True
     for j in range(2, i):
         if i % j == 0:
@@ -47,8 +47,6 @@ for num in numbers:
 print("Primes:", primes)
 print("Not Primes:", not_primes)
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-primes = []
-not_primes = []
+
 
 
