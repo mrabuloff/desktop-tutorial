@@ -27,7 +27,7 @@ def check_email(email):
     return result
 
 # Создаём функцию send_email
-def send_email(message, recipient,sender = "university.help@gmail.com"):
+def send_email(message, recipient,*,sender = "university.help@gmail.com"):
     if (check_email(sender) and check_email(recipient)):
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
     elif sender == recipient:
