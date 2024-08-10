@@ -17,7 +17,7 @@
 За один вызов функции выводится только одно и перечисленных уведомлений! Проверки перечислены по мере выполнения."""
 
 def check_email(email):
-    if not (
+    if  (
             "@" in email and
             email.endswith((".com", ".ru", ".net"))):
             result = True
@@ -27,14 +27,14 @@ def check_email(email):
 
 # Создаём функцию send_email
 def send_email(message, recipient,*,sender = "university.help@gmail.com"):
-    if (check_email(sender) and check_email(recipient)):
+    if not (check_email(sender) and check_email(recipient)):
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
     elif sender == recipient:
-        print("Нельзя отправить письмо самому себе!")
+        print(f"Нельзя отправить письмо самому себе!")
     elif sender == "university.help@gmail.com":
-        print("Письмо успешно отправлено с адреса", sender, "на адрес", recipient)
+        print(f"Письмо успешно отправлено с адреса {sender} на адрес {recipient}")
     else:
-        print("НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса", sender, "на адрес", recipient)
+        print(f"НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}")
 
 # Вызываем функцию send_email
 send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
