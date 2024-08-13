@@ -1,3 +1,6 @@
+
+
+
 n, k = int(input()), int(input())
 last = 0
 for i in range(1, n + 1):
