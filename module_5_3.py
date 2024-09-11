@@ -14,6 +14,7 @@
 # isinstance(other, House) - other указывает на объект типа House.
 
 class House:
+    head = 1
     def __init__(self, name, number_of_floors):
         self.name = name
         self.number_of_floors = number_of_floors
@@ -57,7 +58,7 @@ class House:
 
 h1 = House('ЖК Эльбрус', 10)
 h2 = House('ЖК Акация', 20)
-
+print(House.head)
 print(h1)
 print(h2)
 
